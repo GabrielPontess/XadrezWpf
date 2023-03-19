@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pieces\img\BispoBranco.png" />
+    <None Remove="Pieces\img\BispoPreto.png" />
+    <None Remove="Pieces\img\CavaloBranco.png" />
+    <None Remove="Pieces\img\CavaloPreto.png" />
+    <None Remove="Pieces\img\PeaoBranco.png" />
+    <None Remove="Pieces\img\PeaoPreto.png" />
+    <None Remove="Pieces\img\RainhaBranca.png" />
+    <None Remove="Pieces\img\RainhaPreta.png" />
+    <None Remove="Pieces\img\ReiBranco.png" />
+    <None Remove="Pieces\img\ReiPreto.png" />
+    <None Remove="Pieces\img\TorreBranca.png" />
+    <None Remove="Pieces\img\TorrePreta.png" />
+    <None Remove="Views\background.jpg" />
+    <None Remove="Views\wood.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pieces\img\PecasBrancas\Bispo.png" />
+    <Resource Include="Pieces\img\PecasPretas\Bispo.png" />
+    <Resource Include="Pieces\img\PecasBrancas\Cavalo.png" />
+    <Resource Include="Pieces\img\PecasPretas\Cavalo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pieces\img\PecasPretas\Peao.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pieces\img\PecasBrancas\Peao.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pieces\img\PecasBrancas\Rainha.png" />
+    <Resource Include="Pieces\img\PecasPretas\Rainha.png" />
+    <Resource Include="Pieces\img\PecasBrancas\Rei.png" />
+    <Resource Include="Pieces\img\PecasPretas\Rei.png" />
+    <Resource Include="Pieces\img\PecasBrancas\Torre.png" />
+    <Resource Include="Pieces\img\PecasPretas\Torre.png" />
+    <Resource Include="Views\background.jpg" />
+    <Resource Include="Views\wood.jpg" />
+  </ItemGroup>
+
+</Project>
